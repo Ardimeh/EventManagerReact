@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "React Workshop",
+    "date": "2025-11-01",
+    "organizer": "LinkPlus",
+    "location": "Prishtinë",
+    "description": "Trajnim intensiv për React.",
+    "link": "https://linkplus-it.com"
+  },
+  {
+    "id": 2,
+    "title": "Tech Meetup",
+    "date": "2025-12-10",
+    "organizer": "DevCommunity",
+    "location": "Tiranë",
+    "description": "Event për rrjetëzim dhe diskutime teknologjike.",
+    "link": ""
+  }
+]
