@@ -36,12 +36,12 @@ export default function Home({
       <SearchBar search={search} setSearch={setSearch} />
       <SortBar sortBy={sortBy} setSortBy={setSortBy} />
       {loading ? (
-        <div style={{ textAlign: "center", marginTop: 40 }}>Duke u ngarkuar...</div>
+        <div style={{ textAlign: "center", marginTop: 40 }}>Loading...</div>
       ) : (
         <div className="eventlist">
           {filteredEvents.length === 0 && (
             <div style={{ marginTop: 30, color: "#888" }}>
-              Asnje event nuk u gjet.
+              No events found.
             </div>
           )}
           {filteredEvents.map((event) => (

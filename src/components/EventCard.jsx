@@ -55,9 +55,9 @@ export default function EventCard({ event, deleteEvent, updateEvent }) {
             onChange={(e) => setForm({ ...form, description: e.target.value })}
             rows={2}
           />
-          <button type="submit">Ruaj</button>
+          <button type="submit">Save</button>
           <button type="button" onClick={() => setEdit(false)}>
-            Anulo
+            Cancel
           </button>
         </form>
       ) : (
@@ -73,14 +73,14 @@ export default function EventCard({ event, deleteEvent, updateEvent }) {
           </div>
           <div style={{ marginTop: 10 }}>
             <button className="sm-btn" onClick={() => setEdit(true)}>
-              Ndrysho
+              Edit
             </button>
             <button
               className="sm-btn"
               style={{ background: "#f87171" }}
               onClick={() => deleteEvent(event.id)}
             >
-              Fshi
+              Delete
             </button>
           </div>
         </>

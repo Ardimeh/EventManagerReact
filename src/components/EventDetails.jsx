@@ -9,29 +9,29 @@ export default function EventDetails({ events }) {
   if (!event)
     return (
       <div style={{ textAlign: "center", marginTop: 60 }}>
-        Eventi nuk u gjet! <br />
-        <button onClick={() => navigate(-1)}>Kthehu</button>
+        Event not found! <br />
+        <button onClick={() => navigate(-1)}>Back</button>
       </div>
     );
 
   return (
     <div className="details-container">
       <button onClick={() => navigate(-1)} className="back-btn">
-        &larr; Kthehu
+        &larr; Back
       </button>
       <h2>{event.title}</h2>
       <div className="details-box">
         <div>
-          <b>Data:</b> {event.date}
+          <b>Date:</b> {event.date}
         </div>
         <div>
-          <b>Organizatori:</b> {event.organizer}
+          <b>Organizer:</b> {event.organizer}
         </div>
         <div>
-          <b>Lokacioni:</b> {event.location || "-"}
+          <b>Location:</b> {event.location || "-"}
         </div>
         <div>
-          <b>Pershkrimi:</b> {event.description || "-"}
+          <b>Description:</b> {event.description || "-"}
         </div>
         <div>
           <b>Link:</b>{" "}

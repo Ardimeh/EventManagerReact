@@ -17,7 +17,7 @@ export default function EventForm({ addEvent }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!form.title.trim() || !form.date.trim() || !form.organizer.trim()) {
-      setError("Titulli, data dhe organizatori janë të detyrueshme!");
+      setError("Title, date and organizer are mandatory!");
       return;
     }
     addEvent({ ...form });
@@ -38,14 +38,14 @@ export default function EventForm({ addEvent }) {
         name="title"
         value={form.title}
         onChange={handleChange}
-        placeholder="Titulli*"
+        placeholder="Title*"
         required
       />
       <input
         name="date"
         value={form.date}
         onChange={handleChange}
-        placeholder="Data*"
+        placeholder="Date*"
         type="date"
         required
       />
@@ -53,29 +53,29 @@ export default function EventForm({ addEvent }) {
         name="organizer"
         value={form.organizer}
         onChange={handleChange}
-        placeholder="Organizatori*"
+        placeholder="Organizer*"
         required
       />
       <input
         name="location"
         value={form.location}
         onChange={handleChange}
-        placeholder="Lokacioni"
+        placeholder="Location"
       />
       <input
         name="link"
         value={form.link}
         onChange={handleChange}
-        placeholder="Link (opsional)"
+        placeholder="Link (optional)"
       />
       <textarea
         name="description"
         value={form.description}
         onChange={handleChange}
-        placeholder="Përshkrimi"
+        placeholder="Description"
         rows={2}
       />
-      <button type="submit">Shto Event</button>
+      <button type="submit">Add Event</button>
       {error && <span className="error">{error}</span>}
     </form>
   );

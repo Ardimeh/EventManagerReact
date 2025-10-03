@@ -76,7 +76,7 @@ export default function App() {
       </Routes>
       <footer className="footer">
         <span>
-          Punuar nga <b>Ardi</b> &copy; {new Date().getFullYear()}
+          Worked by <b>Ardi</b> &copy; {new Date().getFullYear()}
         </span>
       </footer>
     </div>
